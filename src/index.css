@@ -1,13 +1,76 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Pretendard;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #000000;
+}
+
+.App-Page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-container {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.Movie-container {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Movie-img {
+  width: 250px;
+  height: 375px;
+  position: relative;
+  cursor: pointer;
+}
+
+.Movie-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.Movie-img-opacity {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+}
+
+.Movie-info {
+  width: 250px;
+  height: 75px;
+  color: white;
+  background-color: #111;
+  border-radius: 0px 0px 5px 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.Movie-info h4 {
+  width: 80%;
+  height: 100%;
+  font-size: 20px;
+  display: inline-block;
+  word-break: keep-all;
+  padding: 12px;
+}
+
+.Movie-info span {
+  width: 20%;
+  height: 100%;
 }
